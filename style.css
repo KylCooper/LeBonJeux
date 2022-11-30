@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Alexandria', sans-serif;
+    overflow-x: hidden;
+}
+body{
+    background-image: url("./image/background-19d968e4..webp");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    margin: 0 auto;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.bloc{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 80px;
+}
+nav{
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 10px;
+}
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h1{
+    color: #C10000;
+    font-size: 30px;
+    font-weight: bold;
+}
+.burger{
+    color: #C10000;
+    font-size: 32px;
+    font-weight: 800;
+    margin-right: 20px;
+}
+#formulaire{
+    margin-top: 80px;
+}
+form{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 700px;
+    margin-top: 10px;
+    border: 3.5px solid #C10000;
+    border-radius: 10px;
+}
+.form-title{
+    margin-left: 20px;
+    /* margin-top: 50px; */
+}
+label{
+    color: #C10000;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 15px;
+}
+input{
+    background-color: #00000038;
+    border: none;
+    width: 255px;
+    height: 36px;
+    border-radius: 22.5px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+.image{
+    width: 164px;
+    margin-top:  150px;
+    margin-left: 170px;
+}
+.cercle-2{
+    position: absolute;
+    width: 302px;
+    height: 302px;
+    border-radius: 100%;
+    border: 6px solid #C10000;
+    margin-top:  -120px;
+    margin-left: -193px;
+}
+/* ------------------------------------------ */
+#paiement{
+    margin-top: 80px;
+}
+.img-paiement{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.visa{
+    width: 100px;
+    height: 50px;
+}
+.paypal{
+    width: 90px;
+}
+.bloc-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.exp{
+    display: flex;
+    flex-direction: column;
+}
+.exp-input{
+    width: 160px;
+    height: 40px;
+}
+.cvc{
+    display: flex;
+    flex-direction: column;
+}
+.cvc-input{
+    width: 105px;
+    height: 40px;
+    margin-right: 5px;
+}
+
+footer{
+    width: 100%;
+    height: 150px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+.test{
+    color: white;
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .bloc{
+        flex-direction: row;
+    }
+    .bloc-2{
+        justify-content: space-around;
+    }
+    .exp{
+        flex-direction: row;
+        align-items: center;
+    }
+    .cvc{
+        flex-direction: row;
+        align-items: center;
+    }
+    .form-title{
+        margin-left: 40px;
+    }
+    label{
+        font-size: 20px;
+    }
+    footer{
+        flex-direction: row;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    form{
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 400px;
+        width: 790px;
+    }
+    .bloc{
+        flex-direction: column;
+    }
+    .bloc-2{
+        justify-content: space-around;
+    }
+    .exp{
+        flex-direction: row;
+        align-items: center;
+    }
+    .cvc{
+        flex-direction: row;
+        align-items: center;
+    }
+    .form-title{
+        margin-left: 40px;
+    }
+    label{
+        font-size: 20px;
+    }
+    .paiement-form{
+        flex-direction: column;
+    }
+    .bloc-2{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 60%;
+    }
+    .exp{
+        flex-direction: column;
+    }
+    .cvc{
+        flex-direction: column;
+    }
+    .form-title{
+        margin-left: 320px;
+    }
+}
+@media only screen and (min-width: 1920px) {
+    form{
+        flex-direction: row;
+        padding: 40px 150px;
+        justify-content: space-between;
+    }
+    .form-title{
+        margin-left: 410px;
+    }
+    .bloc-2{
+        width: 80%;
+    }
+}
